@@ -2,9 +2,9 @@
 
 An amazing iDevice Managment tool! 🥹
 
-Only on macOS with SwiftUI
+💻 Only on macOS with SwiftUI
 
-On development...
+⏳ On development...
 
 
 Requirement ( Homebrew -> https://brew.sh/ ):
