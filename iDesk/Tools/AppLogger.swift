@@ -22,7 +22,7 @@ class AppLogger {
         let startTimeString = dateFormatter.string(from: startTimestamp)
         let logFileName = "AppLog_\(startTimeString).log"
         if let documentsPath = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first {
-            let logFileURL = documentsPath.appendingPathComponent(logFileName)
+            let logFileURL = documentsPath.appendingPathComponent("iDesk\\\(logFileName)")
             self.logFilePath = logFileURL.path
         } else {
             self.logFilePath = NSTemporaryDirectory().appending(logFileName)

@@ -7,24 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4B60FC32B880FC500D8D6EE /* FDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FBB2B880FC500D8D6EE /* FDevice.swift */; };
+		C4B60FC52B880FC500D8D6EE /* SaveAndLoadStractures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FBD2B880FC500D8D6EE /* SaveAndLoadStractures.swift */; };
+		C4B60FC72B880FC500D8D6EE /* DeviceShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FBF2B880FC500D8D6EE /* DeviceShell.swift */; };
+		C4B60FC82B880FC500D8D6EE /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FC02B880FC500D8D6EE /* Dashboard.swift */; };
+		C4B60FC92B880FC500D8D6EE /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FC22B880FC500D8D6EE /* AppLogger.swift */; };
+		C4B60FCC2B8812DE00D8D6EE /* Summery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FCB2B8812DE00D8D6EE /* Summery.swift */; };
+		C4B60FD02B88134200D8D6EE /* Apps.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FCF2B88134200D8D6EE /* Apps.swift */; };
+		C4B60FD42B8813C200D8D6EE /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FD32B8813C200D8D6EE /* Devices.swift */; };
+		C4B60FD62B88141E00D8D6EE /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FD52B88141E00D8D6EE /* Files.swift */; };
+		C4B60FDD2B88156700D8D6EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FDC2B88156700D8D6EE /* Item.swift */; };
+		C4B60FDF2B8816ED00D8D6EE /* Brige.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FDE2B8816ED00D8D6EE /* Brige.swift */; };
+		C4B60FE22B882CA300D8D6EE /* BBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B60FE12B882CA300D8D6EE /* BBattery.swift */; };
 		C4BD69A92B880D6600E9AAA6 /* iDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD69A82B880D6600E9AAA6 /* iDeskApp.swift */; };
-		C4BD69AB2B880D6600E9AAA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD69AA2B880D6600E9AAA6 /* ContentView.swift */; };
-		C4BD69AD2B880D6600E9AAA6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BD69AC2B880D6600E9AAA6 /* Item.swift */; };
 		C4BD69AF2B880D6800E9AAA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BD69AE2B880D6800E9AAA6 /* Assets.xcassets */; };
 		C4BD69B22B880D6800E9AAA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BD69B12B880D6800E9AAA6 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4B60FFC2B88FFCF00D8D6EE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C4B60FBB2B880FC500D8D6EE /* FDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDevice.swift; sourceTree = "<group>"; };
+		C4B60FBD2B880FC500D8D6EE /* SaveAndLoadStractures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveAndLoadStractures.swift; sourceTree = "<group>"; };
+		C4B60FBF2B880FC500D8D6EE /* DeviceShell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceShell.swift; sourceTree = "<group>"; };
+		C4B60FC02B880FC500D8D6EE /* Dashboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		C4B60FC22B880FC500D8D6EE /* AppLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		C4B60FCB2B8812DE00D8D6EE /* Summery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summery.swift; sourceTree = "<group>"; };
+		C4B60FCF2B88134200D8D6EE /* Apps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apps.swift; sourceTree = "<group>"; };
+		C4B60FD32B8813C200D8D6EE /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		C4B60FD52B88141E00D8D6EE /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		C4B60FDC2B88156700D8D6EE /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C4B60FDE2B8816ED00D8D6EE /* Brige.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brige.swift; sourceTree = "<group>"; };
+		C4B60FE02B88175300D8D6EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C4B60FE12B882CA300D8D6EE /* BBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBattery.swift; sourceTree = "<group>"; };
+		C4B60FFE2B88FFCF00D8D6EE /* iDeskCMD */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = iDeskCMD; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BD69A52B880D6600E9AAA6 /* iDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4BD69A82B880D6600E9AAA6 /* iDeskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDeskApp.swift; sourceTree = "<group>"; };
-		C4BD69AA2B880D6600E9AAA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C4BD69AC2B880D6600E9AAA6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C4BD69AE2B880D6800E9AAA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BD69B12B880D6800E9AAA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4BD69B32B880D6800E9AAA6 /* iDesk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDesk.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C4B60FFB2B88FFCF00D8D6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4BD69A22B880D6600E9AAA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,9 +76,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4B60FCA2B8812AD00D8D6EE /* Summery */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FCB2B8812DE00D8D6EE /* Summery.swift */,
+			);
+			path = Summery;
+			sourceTree = "<group>";
+		};
+		C4B60FCD2B8812EA00D8D6EE /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FD12B88136900D8D6EE /* Dashboard */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		C4B60FCE2B88132C00D8D6EE /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FCF2B88134200D8D6EE /* Apps.swift */,
+				C4B60FD52B88141E00D8D6EE /* Files.swift */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		C4B60FD12B88136900D8D6EE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FD22B8813A000D8D6EE /* Dashboard */,
+				C4B60FCE2B88132C00D8D6EE /* Apps */,
+				C4B60FCA2B8812AD00D8D6EE /* Summery */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C4B60FD22B8813A000D8D6EE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FC02B880FC500D8D6EE /* Dashboard.swift */,
+				C4B60FD32B8813C200D8D6EE /* Devices.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C4B60FD72B88152D00D8D6EE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FDC2B88156700D8D6EE /* Item.swift */,
+				C4B60FBD2B880FC500D8D6EE /* SaveAndLoadStractures.swift */,
+				C4B60FBF2B880FC500D8D6EE /* DeviceShell.swift */,
+				C4B60FC22B880FC500D8D6EE /* AppLogger.swift */,
+				C4B60FBB2B880FC500D8D6EE /* FDevice.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C4B60FE32B882CAC00D8D6EE /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				C4B60FDE2B8816ED00D8D6EE /* Brige.swift */,
+				C4B60FE12B882CA300D8D6EE /* BBattery.swift */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
 		C4BD699C2B880D6600E9AAA6 = {
 			isa = PBXGroup;
 			children = (
+				C4B60FE02B88175300D8D6EE /* README.md */,
 				C4BD69A72B880D6600E9AAA6 /* iDesk */,
 				C4BD69A62B880D6600E9AAA6 /* Products */,
 			);
@@ -47,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				C4BD69A52B880D6600E9AAA6 /* iDesk.app */,
+				C4B60FFE2B88FFCF00D8D6EE /* iDeskCMD */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,8 +163,9 @@
 			isa = PBXGroup;
 			children = (
 				C4BD69A82B880D6600E9AAA6 /* iDeskApp.swift */,
-				C4BD69AA2B880D6600E9AAA6 /* ContentView.swift */,
-				C4BD69AC2B880D6600E9AAA6 /* Item.swift */,
+				C4B60FE32B882CAC00D8D6EE /* Bridge */,
+				C4B60FD72B88152D00D8D6EE /* Tools */,
+				C4B60FCD2B8812EA00D8D6EE /* Pages */,
 				C4BD69AE2B880D6800E9AAA6 /* Assets.xcassets */,
 				C4BD69B32B880D6800E9AAA6 /* iDesk.entitlements */,
 				C4BD69B02B880D6800E9AAA6 /* Preview Content */,
@@ -75,6 +184,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C4B60FFD2B88FFCF00D8D6EE /* iDeskCMD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B610022B88FFCF00D8D6EE /* Build configuration list for PBXNativeTarget "iDeskCMD" */;
+			buildPhases = (
+				C4B60FFA2B88FFCF00D8D6EE /* Sources */,
+				C4B60FFB2B88FFCF00D8D6EE /* Frameworks */,
+				C4B60FFC2B88FFCF00D8D6EE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDeskCMD;
+			productName = iDeskCMD;
+			productReference = C4B60FFE2B88FFCF00D8D6EE /* iDeskCMD */;
+			productType = "com.apple.product-type.tool";
+		};
 		C4BD69A42B880D6600E9AAA6 /* iDesk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4BD69B62B880D6800E9AAA6 /* Build configuration list for PBXNativeTarget "iDesk" */;
@@ -102,6 +228,9 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					C4B60FFD2B88FFCF00D8D6EE = {
+						CreatedOnToolsVersion = 15.2;
+					};
 					C4BD69A42B880D6600E9AAA6 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -116,11 +245,14 @@
 				Base,
 			);
 			mainGroup = C4BD699C2B880D6600E9AAA6;
+			packageReferences = (
+			);
 			productRefGroup = C4BD69A62B880D6600E9AAA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C4BD69A42B880D6600E9AAA6 /* iDesk */,
+				C4B60FFD2B88FFCF00D8D6EE /* iDeskCMD */,
 			);
 		};
 /* End PBXProject section */
@@ -138,12 +270,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C4B60FFA2B88FFCF00D8D6EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4BD69A12B880D6600E9AAA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4BD69AB2B880D6600E9AAA6 /* ContentView.swift in Sources */,
-				C4BD69AD2B880D6600E9AAA6 /* Item.swift in Sources */,
+				C4B60FC52B880FC500D8D6EE /* SaveAndLoadStractures.swift in Sources */,
+				C4B60FE22B882CA300D8D6EE /* BBattery.swift in Sources */,
+				C4B60FC92B880FC500D8D6EE /* AppLogger.swift in Sources */,
+				C4B60FD62B88141E00D8D6EE /* Files.swift in Sources */,
+				C4B60FD02B88134200D8D6EE /* Apps.swift in Sources */,
+				C4B60FC82B880FC500D8D6EE /* Dashboard.swift in Sources */,
+				C4B60FCC2B8812DE00D8D6EE /* Summery.swift in Sources */,
+				C4B60FC72B880FC500D8D6EE /* DeviceShell.swift in Sources */,
+				C4B60FDF2B8816ED00D8D6EE /* Brige.swift in Sources */,
+				C4B60FDD2B88156700D8D6EE /* Item.swift in Sources */,
+				C4B60FC32B880FC500D8D6EE /* FDevice.swift in Sources */,
+				C4B60FD42B8813C200D8D6EE /* Devices.swift in Sources */,
 				C4BD69A92B880D6600E9AAA6 /* iDeskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +300,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		C4B610032B88FFCF00D8D6EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29PJMFURAH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C4B610042B88FFCF00D8D6EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29PJMFURAH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		C4BD69B42B880D6800E9AAA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +499,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C4B610022B88FFCF00D8D6EE /* Build configuration list for PBXNativeTarget "iDeskCMD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B610032B88FFCF00D8D6EE /* Debug */,
+				C4B610042B88FFCF00D8D6EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4BD69A02B880D6600E9AAA6 /* Build configuration list for PBXProject "iDesk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

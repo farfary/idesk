@@ -8,6 +8,13 @@
 import Foundation
 
 
+struct FABatteryInfo: Codable{
+    var AbsoluteCapacity: Int?
+    var DesignCapacity: Int?
+    var CycleCount: Int?
+    var CurrentCapacity: Int?
+}
+
 extension iDeskApp{
     
     func jsonPrintPrettyDeviceData(device: FDevice) -> String{
@@ -54,10 +61,35 @@ extension iDeskApp{
             
             let resultBAT1 = try? safeShell("/usr/local/bin/idevicediagnostics ioregentry AppleARMPMUCharger")
             let resultBAT2 = try? safeShell("/usr/local/bin/idevicediagnostics ioregentry AppleSmartBattery")
-            
-            print(resultBAT1)
-            print(resultBAT2)
-            
+
+            if let faBatteryInfoPlistDict = try? PropertyListSerialization.propertyList(from: (resultBAT2!.data(using: .utf8))!, options: [], format: nil) as? [String: Any] {
+
+                if let faIORegistryDict = faBatteryInfoPlistDict["IORegistry"] as? [String:Any] {
+                    
+                    var faBatteryInfo = FABatteryInfo()
+                    
+                    if let faAbsoluteCapacity = faIORegistryDict["AbsoluteCapacity"] as? Int{
+                        faBatteryInfo.AbsoluteCapacity = faAbsoluteCapacity
+                    }
+                    if let faDesignCapacity = faIORegistryDict["DesignCapacity"] as? Int{
+                        faBatteryInfo.DesignCapacity = faDesignCapacity
+                    }
+                    if let faCycleCount = faIORegistryDict["CycleCount"] as? Int{
+                        faBatteryInfo.CycleCount = faCycleCount
+                    }
+                    if let faCurrentCapacity = faIORegistryDict["CurrentCapacity"] as? Int{
+                        faBatteryInfo.CurrentCapacity = faCurrentCapacity
+                    }
+                    
+                    fd.batteryInfo = faBatteryInfo
+                    
+                    print(faBatteryInfo)
+                }
+
+            }else{
+                print("Failed Load Battery Info")
+            }
+
             if loadApps{
                 // Load Apps All
                 if let resultDeviceAppsAll = try? safeShell("/usr/local/bin/ideviceinstaller -u \(uuid) -l -o list_all"){
@@ -133,7 +165,6 @@ extension iDeskApp{
             case "BasebandChipID":
                 deviceData.BasebandChipID = Int(value ?? "")
             case "BasebandKeyHashInformation":
-                // Implement parsing of nested struct
                 break
             case "BasebandMasterKeyHash":
                 deviceData.BasebandMasterKeyHash = value

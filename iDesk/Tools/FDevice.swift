@@ -24,6 +24,7 @@ class FDevice: Identifiable, Codable{
     var deviceAppsAll: [App]? = nil
     var deviceAppsSystem: [App]? = nil
     var deviceAppsUser: [App]? = nil
+    var batteryInfo: FABatteryInfo? = nil
     
     
 

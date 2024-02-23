@@ -8,8 +8,24 @@
 import SwiftUI
 import SwiftData
 
+
+class AppDelegate: NSObject, NSApplicationDelegate {
+    func applicationDidBecomeActive(_ notification: Notification) {   
+    }
+}
+
+
+
 @main
 struct iDeskApp: App {
+    static let logger = AppLogger()
+    static let shared: iDeskApp = iDeskApp()
+    static var fDevices:[FDevice] = []
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
+   
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -26,7 +42,17 @@ struct iDeskApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear {
+//                    NSApp.hide(nil)
+                    
+                }
         }
         .modelContainer(sharedModelContainer)
+        .defaultPosition(.center)
+        .commands {
+            
+        }
     }
+
 }
+
